@@ -7,14 +7,14 @@ from selenium.webdriver.support import expected_conditions as EC
 from playsound import playsound
 
 
-usernameStr = 'alexesl17'
-passwordStr = 'nicole0103'
+usernameStr = 'test'
+passwordStr = 'test'
 
 driver = webdriver.Chrome("/Users/alexbrown/Desktop/chromedriver");
 driver.get(("https://www.fyletikesmaxes.gr/"));
 
-driver.find_element_by_name("username").send_keys("alexesl17");
-driver.find_element_by_name("password").send_keys("nicole0103");
+driver.find_element_by_name("username").send_keys("test");
+driver.find_element_by_name("password").send_keys("test");
 driver.find_element_by_class_name("btn-login").click();
 time.sleep(2);
 driver.find_element_by_class_name("world_button_active").click();
